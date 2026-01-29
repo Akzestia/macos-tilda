@@ -37,6 +37,15 @@ bool createDirectoryRecursive(const std::string &path) {
       }
     }
   }
+
+  struct stat st;
+  if (stat(path.c_str(), &st) != 0) {
+    if (mkdir(path.c_str(), 0755) != 0 && errno != EEXIST) {
+      fprintf(stderr, "Failed to create final directory: %s (error: %s)\n",
+              path.c_str(), strerror(errno));
+      return false;
+    }
+  }
   return true;
 }
 
