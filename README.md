@@ -15,3 +15,18 @@ Allows you to use you keyboard on MacOS ^^
   "10": ["", "`"],
 }
 ```
+
+# Running the app
+
+Just use `./scripts/run.sh`
+
+```sh
+sudo chmod +x ./scripts/run.sh
+./scripts/run.sh
+```
+> [!TIP]
+> run.sh
+> ```
+> #!/bin/bash
+> nohup ./build/keyremap > /dev/null 2>&1 &
+> ```
