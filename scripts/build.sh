@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "==> Building MacOSTilda..."
+echo "==> Building MacOSTilde..."
 cmake -S . -B build -G Ninja && ninja -C build
 
 if [ $? -ne 0 ]; then
@@ -8,7 +8,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo ""
-read -r -p "Install macos-tilda? [Y/n] " input
+read -r -p "Install macos-tilde? [Y/n] " input
 
 case $input in
     [yY][eE][sS]|[yY]|"")
