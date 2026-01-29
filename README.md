@@ -16,6 +16,10 @@ Allows you to use you keyboard on MacOS ^^
 }
 ```
 
+> [!TIP]
+> If you don't knwo the keycode of the key u want to bind, </br>
+> u can check by running `./scripts/test.sh` or `keyremap --keycodes`
+
 # Running the app
 
 Just use `./scripts/run.sh`
@@ -30,3 +34,4 @@ sudo chmod +x ./scripts/run.sh
 > #!/bin/bash
 > nohup ./build/keyremap > /dev/null 2>&1 &
 > ```
+keyremap
