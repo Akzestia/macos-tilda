@@ -1,6 +1,6 @@
 # MacOS Tilde
 
-Allows you to use you keyboard on MacOS ^^
+Allows you to use your keyboard on MacOS ^^
 
 # Build 
 
